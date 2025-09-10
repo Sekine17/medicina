@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-solid.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-regular.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-light.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/duotone.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/brands.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/font.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Medicina</title>
+</head>
+
+<body>
+    <div class="header-top mobile-version">
+        <p class="telefon"><i class="fa-regular fa-mobile"></i>1-800-555-1234</p>
+        <p class="flags"><img src="img/flag-brazil.png" alt="">PORTUGUES
+            <img src="img/flag-england.png" alt="" id="eng">ENGLISH</p>
+    </div>
+
+    <div class="header-top desktop-version">
+        <div class="container hizalama">
+            <p class="telefon"><i class="fa-regular fa-mobile"></i>1-800-555-1234</p>
+            <p>
+                <div class="silinsin">
+                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <button class="type">Type a word to find</button>
+                    <a href="">SEARCH</a>
+                </div>
+            </p>
+            <p class="flags"><img src="img/flag-brazil.png" alt="">PORTUGUES
+                <img src="img/flag-england.png" alt="" id="eng">ENGLISH</p>
+        </div>
+    </div>
+    <header class="mobile-version">
+        <div class="logo-bar">
+            <img src="img/logo.png" alt="">
+            <p><i class="fa-regular fa-bars"></i></p>
+        </div>
+    </header>
+    <header class="desktop-version container">
+        <img src="img/logo.png" alt="">
+        <menu>
+            <li><a href="">Home</a></li>
+            <li><a href="">Medicina</a></li>
+            <li><a href="">Departments</a></li>
+            <li><a href="">Doctors</a></li>
+            <li><a href="">News</a></li>
+            <li><a href="">FAQ</a></li>
+            <li><a href="">Contact Us</a></li>
+            <li><a href=""><i class="fa-brands fa-facebook-f silinsin"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-twitter silinsin"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-google silinsin"></i></a></li>
+        </menu>
+    </header>
+    <main>
+        <div class="hero1">
+            <div class="container">
+                <h1>We have more <u>+100</u> surgens to take care of you</h1>
+                <img src="img/pulse.png" alt="">
+                <form action="">
+                    <button type="submit" class="read">READ MORE</button>
+                    <button type="" class="plus">+</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="form-hisse mobile-version">
+            <form action="">
+                <label for="">Patient name</label>
+                <input type="text">
+
+                <label for="">Phone name</label>
+                <input type="text">
+
+                <label for="">E-mail</label>
+                <input type="text">
+
+                <hr>
+
+                <label for="">Select date</label>
+                <input type="date" class="selectdate">
+
+                <label for="">Department</label>
+                <select name="" id="">
+                    <option value="">Cardiology</option>
+                    <option value="">Neurology</option>
+                    <option value="">Oncology</option>
+                    <option value="">Psychiatry</option>
+                    <option value="">Dermatology</option>
+                </select>
+
+                <hr>
+
+                <div class="son">
+                    <input type="radio" name="gender">Male
+                    <input type="radio" name="gender">Female
+                    <input type="submit" value="MAKE IT  │  ▶" class="makeit">
+                </div>
+
+            </form>
+        </div>
+        <div class="form-hisse desktop-version container">
+            <form action="">
+                <div class="row xett">
+                    <div class="col">
+                        <label for="">Patient name</label>
+                        <input type="text" class="form-input">
+                    </div>
+                    <div class="col">
+                        <label for="">Phone number</label>
+                        <input type="tel" class="form-input">
+                    </div>
+                    <div class="col">
+                        <label for="">E-mail</label>
+                        <input type="email" class="form-input">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col2">
+                        <label for="">Select date</label>
+                        <input type="date" class="selectdate">
+                    </div>
+                    <div class="col2">
+                        <label for="">Department</label>
+                        <select name="" id="">
+                            <option value="">Cardiology</option>
+                            <option value="">Neurology</option>
+                            <option value="">Oncology</option>
+                            <option value="">Psychiatry</option>
+                            <option value="">Dermatology</option>
+                        </select>
+                    </div>
+                    <div class="col2 son2">
+                        <input type="radio" name="gender">Male
+                        <input type="radio" name="gender">Female
+                        <input type="submit" value="MAKE IT  │  ▶" class="makeit">
+                    </div>
+                </div>
+
+            </form>
+        </div>
+
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,414 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.header-top {
+    height: 50px;
+    color: white;
+    background-color: #1dd2c8;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.telefon {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    font-weight: 700;
+
+    .fa-mobile {
+        font-size: 20px;
+    }
+}
+
+.flags {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: 800;
+    font-size: 11px;
+
+    #eng {
+        padding-left: 10px;
+    }
+}
+
+.desktop-version {
+    display: none;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    /* background-color: red; */
+    padding: 0 10px;
+}
+
+.fa-bars {
+    color: #333;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.hero1 {
+    height: calc(100vh - 120px);
+    background: url('../img/banner3.jpg') no-repeat center center/cover;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.hero1 h1 {
+    width: 54%;
+    font-size: 28px;
+    color: #7a7b86;
+    font-weight: 800;
+}
+
+.hero1 h1 u {
+    color: #1dd2c8;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.hero1 img {
+    width: 250px;
+}
+
+.hero1 form {
+    display: flex;
+}
+
+.hero1 form button {
+    height: 40px;
+    border: none;
+    background-color: #1dd2c8;
+    color: white;
+    font-size: 20px;
+    font-weight: 800;
+    text-shadow: 0 1px 1px rgba(-255, -255, -255, 0.3);
+    cursor: pointer;
+}
+
+.read {
+    width: 150px;
+    text-align: left;
+}
+
+.plus {
+    border-left: 1px solid red;
+    width: 50px;
+}
+
+.form-hisse {
+    background-color: #1dd2c8;
+    height: auto;
+}
+
+.form-hisse form {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input:not([type="radio"]):not([type="submit"]),
+form select {
+    height: 40px;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+    padding: 0 10px;
+}
+
+label {
+    color: #fff;
+    font-weight: 700;
+}
+
+select {
+    width: 180px;
+    color: #1dd2c8;
+    font-size: 15px;
+}
+
+.selectdate {
+    width: 140px;
+    color: #1dd2c8;
+    font-size: 15px;
+}
+
+.selectdate::-webkit-calendar-picker-indicator {
+    display: none;
+    /* calendar iconu gizlədir */
+}
+
+.son {
+    color: #fff;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.makeit {
+    height: 40px;
+    width: 120px;
+    border: 1px solid white;
+    background-color: transparent;
+    border-radius: 2px;
+    color: white;
+    font-weight: 600;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    transform: scale(1.3);
+    /* ölçünü 1.5 dəfə böyüdür */
+    background-color: #1dd2c8;
+}
+
+input:focus,
+select:focus {
+    box-shadow: 0 0 10px white;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 80%;
+        max-width: 100%;
+        margin: auto;
+    }
+
+    .hizalama {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .mobile-version {
+        display: none;
+    }
+
+    .desktop-version {
+        display: flex;
+        padding: 0 10px;
+    }
+
+    .desktop-version div {
+        display: flex;
+        align-items: center;
+    }
+
+    .desktop-version button {
+        border: none;
+        height: 35px;
+        color: white;
+        background-color: #ffffff2a;
+        font-size: 15px;
+    }
+
+    .fa-magnifying-glass {
+        font-size: 20px;
+    }
+
+    .type {
+        width: 200px;
+        text-align: left;
+        margin-right: 12px;
+    }
+
+    .telefon {
+        font-size: 18px;
+    }
+
+    header {
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    menu {
+        display: flex;
+        gap: 15px;
+
+        .fa-brands {
+            font-size: 20px;
+            color: #1dd2c8;
+        }
+    }
+
+    .fa-facebook-f {
+        margin-left: 30px;
+    }
+
+    menu li a {
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+
+    /*hero1 baladi*/
+
+    .hero1 {
+        height: calc(100vh - 120px);
+        background: url('../img/banner3.jpg') no-repeat center center/cover;
+        padding: 0;
+    }
+
+    .hero1 div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 110px;
+        gap: 30px;
+    }
+
+    .hero1 h1 {
+        width: 47%;
+        font-size: 40px;
+        color: #7a7b86;
+        font-weight: 800;
+    }
+
+    .hero1 h1 u {
+        color: #1dd2c8;
+        font-size: 50px;
+        font-weight: 800;
+    }
+
+    .hero1 img {
+        width: 400px;
+    }
+
+    .hero1 form {
+        display: flex;
+    }
+
+    .hero1 form button {
+        height: 40px;
+        border: none;
+        background-color: #1dd2c8;
+        color: white;
+        font-size: 20px;
+        font-weight: 800;
+        text-shadow: 0 1px 1px rgba(-255, -255, -255, 0.3);
+        cursor: pointer;
+    }
+
+    .read {
+        width: 150px;
+        text-align: left;
+    }
+
+    .plus {
+        border-left: 1px solid red;
+        width: 50px;
+    }
+
+    
+
+    /*hero1 bitdi*/
+
+    /*form doldurma basladi*/
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+        /* birinci sol, ikinci ortada, üçüncü sağda */
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .col {
+        flex: 1;
+        /* hər biri bərabər paylansın */
+        max-width: 30%;
+        /* maksimum 1/3 en */
+        margin: 0 10px;
+        /* aralarında məsafə */
+        display: flex;
+        flex-direction: column;
+    }
+
+    .col2 {
+        flex: 1;
+        /* hər biri bərabər paylansın */
+        max-width: 30%;
+        /* maksimum 1/3 en */
+        margin: 0 10px;
+        /* aralarında məsafə */
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-input {
+        width: 100%;
+        padding: 0px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    label {
+        padding-bottom: 10px;
+    }
+
+    .col2 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .form-hisse form {
+        width: 100%;
+        max-width: 100%;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .xett{
+        padding-bottom: 30px;
+        border-bottom: 1px solid white;
+    }
+
+    .form-hisse{
+        position: relative;
+        bottom: 50px;
+        border-radius: 10px;
+    }
+
+    .son2{
+        color: white;
+        font-weight: 700;
+    }
+    /*form doldurma bitdi*/
+}
+
+
+
+
+@media screen and (max-width: 1000px) {
+    .silinsin {
+        display: none !important;
+    }
+
+    menu {
+        display: flex;
+        gap: 10px;
+    }
+
+    .container {
+        width: 95% !important;
+    }
+}
