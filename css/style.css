@@ -147,7 +147,6 @@ select {
 
 .selectdate::-webkit-calendar-picker-indicator {
     display: none;
-    /* calendar iconu gizlədir */
 }
 
 .son {
@@ -172,7 +171,6 @@ select {
 
 input[type="radio"] {
     transform: scale(1.3);
-    /* ölçünü 1.5 dəfə böyüdür */
     background-color: #1dd2c8;
 }
 
@@ -323,29 +321,22 @@ select:focus {
     .row {
         display: flex;
         justify-content: space-between;
-        /* birinci sol, ikinci ortada, üçüncü sağda */
         align-items: flex-start;
         width: 100%;
     }
 
     .col {
         flex: 1;
-        /* hər biri bərabər paylansın */
         max-width: 30%;
-        /* maksimum 1/3 en */
         margin: 0 10px;
-        /* aralarında məsafə */
         display: flex;
         flex-direction: column;
     }
 
     .col2 {
         flex: 1;
-        /* hər biri bərabər paylansın */
         max-width: 30%;
-        /* maksimum 1/3 en */
         margin: 0 10px;
-        /* aralarında məsafə */
         display: flex;
         flex-direction: column;
     }
