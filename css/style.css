@@ -103,7 +103,6 @@ header div {
 }
 
 .plus {
-    border-left: 1px solid red;
     width: 50px;
 }
 
@@ -177,6 +176,103 @@ input[type="radio"] {
 input:focus,
 select:focus {
     box-shadow: 0 0 10px white;
+}
+
+/*basliq hisse basladi*/
+.basliq {
+    padding: 50px 0;
+    text-align: center;
+    margin: auto;
+}
+
+.basliq h2 {
+    font-size: 40px;
+    color: #1dd2c8;
+}
+
+.basliq img {
+    width: 150px;
+}
+
+.basliq p {
+    font-size: 14px;
+    color: #84858B;
+}
+
+/*basliq hisse bitdi*/
+
+.card1 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card-col {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card-col div {
+    margin: auto;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background-color: #1dd2c8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        width: 70px;
+    }
+}
+
+.card-col h3 {
+    color: #1dd2c8;
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.card-col hr {
+    width: 50px;
+    border: none;
+    border: 1px solid #1dd2c8;
+}
+
+.card-col p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: #84858B;
+    font-weight: 400;
+}
+
+.forall form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    button {
+        height: 40px;
+        border: none;
+        background-color: #1dd2c8;
+        color: white;
+        font-size: 20px;
+        font-weight: 800;
+        text-shadow: 0 1px 1px rgba(-255, -255, -255, 0.3);
+        cursor: pointer;
+    }
+}
+
+.forall {
+    margin-top: 30px !important;
+    /* istədiyin qədər */
+}
+
+.auto {
+    margin: auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -312,7 +408,7 @@ select:focus {
         width: 50px;
     }
 
-    
+
 
     /*hero1 bitdi*/
 
@@ -362,30 +458,50 @@ select:focus {
     .form-hisse form {
         width: 100%;
         max-width: 100%;
-        padding: 30px;
         display: flex;
         flex-direction: column;
         gap: 20px;
     }
 
-    .xett{
+    .xett {
         padding-bottom: 30px;
         border-bottom: 1px solid white;
     }
 
-    .form-hisse{
-        position: relative;
-        bottom: 50px;
+    .form-hisse {
+        margin-top: -50px;
         border-radius: 10px;
     }
 
-    .son2{
+    .son2 {
         color: white;
         font-weight: 700;
     }
-    /*form doldurma bitdi*/
-}
 
+    /*form doldurma bitdi*/
+
+    .card1 {
+        margin: auto;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        padding-bottom: 50px;
+    }
+
+    .card-col {
+        width: 23%;
+        max-width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .forall {
+        margin-top: 0px !important;
+        /* istədiyin qədər */
+    }
+
+
+}
 
 
 
@@ -401,5 +517,17 @@ select:focus {
 
     .container {
         width: 95% !important;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .col2 {
+        flex-wrap: wrap;
+    }
+
+    .son2 {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
     }
 }
