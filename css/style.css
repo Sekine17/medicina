@@ -359,7 +359,73 @@ select:focus {
     width: 100%;
 }
 
+.click {
+    width: 190px !important;
+}
+
 /*3lu hisse bitdi*/
+
+/*latest new basladi*/
+.iki-card {
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.iki-card form {
+    display: flex;
+}
+
+.iki-card form button {
+    height: 40px;
+    border: none;
+    background-color: #1dd2c8;
+    color: white;
+    font-size: 20px;
+    font-weight: 800;
+    text-shadow: 0 1px 1px rgba(-255, -255, -255, 0.3);
+    cursor: pointer;
+
+    .read {
+        width: 150px;
+        text-align: left;
+    }
+
+    .plus {
+        border-left: 1px solid red;
+        width: 50px;
+    }
+}
+
+.iki-card h3 {
+    color: #1dd2c8;
+    font-weight: 400;
+    font-size: 30px;
+    margin-bottom: -20px;
+}
+
+.iki-card small {
+    color: #BDBDBD;
+    font-size: 13px;
+}
+
+.iki-card small {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: #84858B;
+    font-weight: 400;
+}
+
+.card-1,
+.card-2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/*latest new bitdi*/
 @media screen and (min-width: 768px) {
     .container {
         width: 80%;
@@ -591,10 +657,82 @@ select:focus {
         padding: 50px 0;
     }
 
-    .seksen-faiz{
+    .seksen-faiz {
         width: 80%;
         margin: auto;
     }
+
+
+    /*latest new basladi*/
+
+    .iki-card {
+        width: 100%;
+        max-width: fit-content;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+    }
+
+    .iki-card img {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .iki-card form {
+        display: flex;
+    }
+
+    .iki-card form button {
+        height: 40px;
+        border: none;
+        background-color: #1dd2c8;
+        color: white;
+        font-size: 20px;
+        font-weight: 800;
+        text-shadow: 0 1px 1px rgba(-255, -255, -255, 0.3);
+        cursor: pointer;
+
+        .read {
+            width: 150px;
+            text-align: left;
+        }
+
+        .plus {
+            border-left: 1px solid red;
+            width: 50px;
+        }
+    }
+
+    .iki-card h3 {
+        color: #1dd2c8;
+        font-weight: 400;
+        font-size: 30px;
+        margin-bottom: -20px;
+    }
+
+    .iki-card small {
+        color: #BDBDBD;
+        font-size: 13px;
+    }
+
+    .iki-card small {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 15px;
+        color: #84858B;
+        font-weight: 400;
+    }
+
+    .card-1,
+    .card-2 {
+        flex: 1 1 400px;
+        /* böyüyə bilər, kiçilə bilər, minimum 400px */
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    /*latest new bitdi*/
 }
 
 
@@ -613,12 +751,14 @@ select:focus {
         width: 95% !important;
     }
 
-    .seksen-faiz{
+    .seksen-faiz {
         width: 100%;
         margin: auto;
     }
 
-
+    .iki-card {
+        padding: 0px 10px;
+    }
 }
 
 @media screen and (max-width: 1200px) {
