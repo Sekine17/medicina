@@ -268,7 +268,6 @@ select:focus {
 
 .forall {
     margin-top: 30px !important;
-    /* istədiyin qədər */
 }
 
 .auto {
@@ -554,6 +553,114 @@ select:focus {
 }
 
 /*logo sekilleri qutardi*/
+
+/* footer top basladi */
+.header-top {
+    height: auto;
+    background-color: #1dd2c8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.follow-us-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.follow-us-text .fa-mobile {
+    padding-right: 10px;
+}
+
+.follow-us-text h2 {
+    font-size: 30px;
+}
+
+.follow-icon {
+    display: flex;
+}
+
+.follow-icon .fa-brands {
+    padding-right: 10px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.follow-icon h4 {
+    font-size: 18px;
+    padding-right: 25px;
+    border-right: 1px solid white;
+}
+
+/* footer top bitdi*/
+
+/* footer basladi*/
+footer {
+    padding: 30px 0;
+    color: white;
+    height: auto;
+    background-color: #7a7b86;
+}
+
+.yazi-5 {
+    padding: 0px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+.yazi-5 img{
+    width: 30%;
+}
+.yazi-5 hr {
+    width: 100px;
+    margin: 10px 0;
+}
+
+.yazi-5 div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.yazi-5 div h4 {
+    font-size: 19px;
+    font-weight: 800;
+}
+
+.yazi-5 form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.yazi-5 form input {
+    height: 45px;
+    border: none;
+}
+
+.yazi-5 form ::placeholder {
+    font-size: 15px;
+}
+
+.join {
+    width: 100px;
+    border-radius: 3px;
+    background-color: #1dd2c8;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+}
+.ferqli p:hover {
+    color: #1dd2c8;
+    cursor: pointer;
+    text-decoration: dashed;
+}
+
+/* footer bitdi*/
+
 @media screen and (min-width: 768px) {
     .container {
         width: 80%;
@@ -774,7 +881,6 @@ select:focus {
 
     .forall {
         margin-top: 0px !important;
-        /* istədiyin qədər */
     }
 
     .uclu-hisse {
@@ -944,12 +1050,22 @@ select:focus {
         align-items: center;
     }
 
-    .logolar img{
+    .logolar img {
         width: 25%;
     }
 
-
     /*logo sekilleri qutardi*/
+
+    .yazi-5 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .yazi-5 img{
+    width: 70%;
+}
+
 }
 
 
@@ -982,6 +1098,9 @@ select:focus {
         flex-wrap: wrap;
     }
 
+    .header-top h4 {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 1200px) {
