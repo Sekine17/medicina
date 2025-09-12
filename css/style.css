@@ -275,6 +275,91 @@ select:focus {
     margin: auto;
 }
 
+/*3lu hisse basladi*/
+.uclu-hisse {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0;
+    overflow-x: hidden;
+}
+
+.lab-schedule {
+    background-color: #42b3e5;
+}
+
+.check-up {
+    background-color: #1dd2c8;
+}
+
+.other-clinics {
+    background-color: #4baabc;
+}
+
+.column1 {
+    color: white;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    padding: 15px 10px;
+}
+
+.column1 div img {
+    padding-right: 10px;
+    border-right: 1px dashed white;
+}
+
+.column1 div:first-child {
+    display: flex;
+    align-items: center;
+    /* width: 20%; */
+    max-width: 100%;
+    height: 80px;
+}
+
+.column1 div {
+    /* width: 80%; */
+    max-width: 100%;
+
+}
+
+.column1 div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    padding-left: 10px;
+}
+
+.column1 h3 {
+    font-size: 20px;
+}
+
+.column1 hr {
+    margin-left: 0;
+    width: 50px;
+    border: none;
+    border: 1px solid white;
+}
+
+.column1 p {
+    font-size: 15px;
+}
+
+.column1 a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    border: 1px solid white;
+    padding: 8px 5px;
+    font-weight: 600;
+}
+
+.container {
+    width: 100%;
+}
+
+/*3lu hisse bitdi*/
 @media screen and (min-width: 768px) {
     .container {
         width: 80%;
@@ -500,7 +585,16 @@ select:focus {
         /* istədiyin qədər */
     }
 
+    .uclu-hisse {
+        display: flex;
+        flex-direction: row;
+        padding: 50px 0;
+    }
 
+    .seksen-faiz{
+        width: 80%;
+        margin: auto;
+    }
 }
 
 
@@ -518,6 +612,13 @@ select:focus {
     .container {
         width: 95% !important;
     }
+
+    .seksen-faiz{
+        width: 100%;
+        margin: auto;
+    }
+
+
 }
 
 @media screen and (max-width: 1200px) {
@@ -530,4 +631,5 @@ select:focus {
         align-items: center;
         justify-content: center;
     }
+
 }
