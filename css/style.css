@@ -428,7 +428,7 @@ select:focus {
 /*latest new bitdi*/
 
 /*healthy weekend basladi*/
-.healthy-weekend{
+.healthy-weekend {
     height: 50vh;
     margin-top: 100px;
     background: url('../img/teyziqolcen.png');
@@ -442,17 +442,17 @@ select:focus {
     text-align: center;
 }
 
-.healthy-weekend h2{
+.healthy-weekend h2 {
     font-weight: 800;
     font-size: 50px;
 }
 
-.healthy-weekend h4{
+.healthy-weekend h4 {
     font-size: 20px;
     font-weight: 500;
 }
 
-.healthy-weekend a{
+.healthy-weekend a {
     margin-top: 30px;
     color: #fff;
     border: 1px solid #fff;
@@ -466,19 +466,94 @@ select:focus {
 /*healthy weekend bitdi*/
 
 /*gallery basladi*/
-.sekiller{
+.sekiller {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.sekiller img{
+.sekiller img {
     width: 100%;
 }
 
-
 /*gallery bitdi*/
+
+/*Department-hissesi basladi*/
+
+.ikili-card {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding-bottom: 50px;
+}
+
+.ikili-card img {
+    width: 100%;
+}
+
+.ikili-card1,
+.ikili-card2 {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.text-hisse {
+    background-color: #1dd2c8;
+    padding: 20px;
+    margin-top: -10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+}
+
+.text-hisse h3 {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.text-hisse p {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.text-hisse a {
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 5px 12px;
+    width: 100px;
+    font-weight: 700;
+    border-radius: 2px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Department-hissesi bitdi*/
+
+.xett2 {
+    border: none;
+    height: 1px;
+    background-color: #8b8a8a;
+    transform: scaleY(0.5);
+}
+
+/*logo sekilleri basladi*/
+.logolar {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.logolar img {
+    width: 350px;
+}
+
+/*logo sekilleri qutardi*/
 @media screen and (min-width: 768px) {
     .container {
         width: 80%;
@@ -785,16 +860,96 @@ select:focus {
 
     /*latest new bitdi*/
 
-    .sekiller{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
+    .sekiller {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 
-.sekiller img{
-    width: 24%;
-}
+    .sekiller img {
+        width: 24%;
+    }
+
+    .ikili-card {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .ikili-card1,
+    .ikili-card2 {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        /* ən vacib hissə */
+    }
+
+    .ikili-card1>div,
+    .ikili-card2>div {
+        flex: 1;
+        /* hər ikisi eyni pay alsın */
+    }
+
+    .ikili-card img {
+        width: 100%;
+        height: 100%;
+        /* şəkil textlə eyni hündürlükdə olsun */
+        object-fit: cover;
+        /* şəkli kəsib yerləşdirir, amma forması pozulmur */
+        display: block;
+    }
+
+    .text-hisse {
+        width: 100%;
+        background-color: #1dd2c8;
+        padding: 20px;
+        margin-top: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        color: white;
+    }
+
+    .text-hisse h3 {
+        font-weight: 700;
+        font-size: 20px;
+    }
+
+    .text-hisse p {
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    .text-hisse a {
+        color: #fff;
+        border: 1px solid #fff;
+        padding: 5px 12px;
+        width: 100px;
+        font-weight: 700;
+        border-radius: 2px;
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /*logo sekilleri basladi*/
+    .logolar {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logolar img{
+        width: 25%;
+    }
+
+
+    /*logo sekilleri qutardi*/
 }
 
 
@@ -821,6 +976,12 @@ select:focus {
     .iki-card {
         padding: 0px 10px;
     }
+
+    .ikili-card1,
+    .ikili-card2 {
+        flex-wrap: wrap;
+    }
+
 }
 
 @media screen and (max-width: 1200px) {
