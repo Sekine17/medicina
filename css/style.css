@@ -428,7 +428,7 @@ select:focus {
 
 /*healthy weekend basladi*/
 .healthy-weekend {
-    height:auto;
+    height: auto;
     margin-top: 100px;
     background: url('../img/teyziqolcen.png');
     display: flex;
@@ -612,9 +612,11 @@ footer {
     justify-content: space-between;
     gap: 20px;
 }
-.yazi-5 img{
+
+.yazi-5 img {
     width: 30%;
 }
+
 .yazi-5 hr {
     width: 100px;
     margin: 10px 0;
@@ -654,6 +656,7 @@ footer {
     font-size: 17px;
     font-weight: 600;
 }
+
 .ferqli p:hover {
     color: #1dd2c8;
     cursor: pointer;
@@ -1063,10 +1066,14 @@ footer {
         justify-content: space-between;
     }
 
-    .yazi-5 img{
-    width: 70%;
-}
+    .yazi-5 img {
+        width: 70%;
+    }
 
+    .yazi-5 hr {
+        border: none;
+        border: 1px solid white;
+    }
 }
 
 
