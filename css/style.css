@@ -428,7 +428,7 @@ select:focus {
 
 /*healthy weekend basladi*/
 .healthy-weekend {
-    height: 50vh;
+    height:auto;
     margin-top: 100px;
     background: url('../img/teyziqolcen.png');
     display: flex;
@@ -555,13 +555,14 @@ select:focus {
 /*logo sekilleri qutardi*/
 
 /* footer top basladi */
-.header-top {
+.footer-top {
     height: auto;
     background-color: #1dd2c8;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 20px 0;
+    color: white;
 }
 
 .follow-us-text {
@@ -1098,7 +1099,7 @@ footer {
         flex-wrap: wrap;
     }
 
-    .header-top h4 {
+    .footer-top h4 {
         display: none;
     }
 }
